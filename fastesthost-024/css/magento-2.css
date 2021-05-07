@@ -1,0 +1,296 @@
+/*   Magento2 Page   */
+
+.page-top__bg_item:nth-of-type(1) {
+    top: 0;
+    left: -7rem;
+    background: #f3f3f3;
+}
+
+.page-top__bg_item:nth-of-type(2) {
+    top: 20rem;
+    left: -27rem;
+    background: #efefef;
+}
+
+.page-top__bg_item:nth-of-type(3) {
+    top: 60rem;
+    left: -7rem;
+    background: #ebebeb;
+}
+
+.page-top__bg_item:nth-of-type(4) {
+    top: 20rem;
+    right: -7rem;
+    background: #ebebeb;
+}
+
+.page-top__bg_item:nth-of-type(5) {
+    top: 40rem;
+    right: -27rem;
+    background: #ffffff;
+}
+
+.page-top__bg_item:nth-of-type(6) {
+    right: -7em;
+    top: 80rem;
+    background: #fbfbfb;
+}
+
+.page-top__container {
+    padding: 5rem 3rem;
+}
+
+.magento-2-top__content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.magento-2__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.table-wrap {
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+}
+
+table.dataTable,
+table.dataTable tr,
+table.dataTable th,
+table.dataTable td {
+    box-sizing: border-box;
+}
+
+table.dataTable,
+.magento-2__table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+    display: none !important;
+}
+
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    display: none;
+}
+
+th,
+td {
+    height: 4.5rem;
+    padding: 0 2rem !important;
+    font: 400 1.5rem / .8 'Nunito Sans', sans-serif !important;
+    white-space: nowrap;
+    transition: all .3s ease-out;
+}
+
+th {
+    background: #101010;
+    color: #fff;
+}
+
+th:hover {
+    color: #F70001;
+}
+
+table.dataTable th {
+    padding-right: 4.5rem !important;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: url(../images/sort_asc.svg);
+    background-size: 1rem;
+    background-position: calc(100% - 1.75rem) 50%;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url(../images/sort_desc.svg);
+    background-size: 1rem;
+    background-position: calc(100% - 1.75rem) 50%;
+}
+
+table.dataTable thead .sorting {
+    background-image: url(../images/sort_both.svg);
+    background-size: 1rem;
+    background-position: calc(100% - 1.75rem) 50%;
+}
+
+table.dataTable thead th:last-of-type {
+    background-size: 0;
+}
+
+td {
+    background: #f7f7f7;
+    color: #101010;
+}
+
+td:nth-last-of-type(1),
+td:nth-last-of-type(2),
+td:nth-last-of-type(3) {
+    text-align: center;
+}
+
+tr:nth-of-type(2n+1) td {
+    background: #fff;
+}
+
+tr:hover td {
+    background: #ffeeee;
+}
+
+td:nth-of-type(n):hover {
+    background: #ffd7d7;
+}
+
+th:not(:last-of-type),
+td:not(:last-of-type) {
+    border-right: .2rem solid #ececec;
+}
+
+tr {
+    border-bottom: .2rem solid #ececec;
+}
+
+td a {
+    position: relative;
+    display: inline-block;
+    font: 600 1.8rem / .8 'Nunito Sans', sans-serif;
+    color: #f70001;
+    transition: all .3s ease-out;
+}
+
+td a:hover {
+    color: #d10001 !important;
+}
+
+td a:after {
+    content: '';
+    position: absolute;
+    bottom: -.3em;
+    left: 0;
+    height: .1rem;
+    width: 100%;
+    background: #f70001;
+    transition: all .3s ease-out;
+}
+
+td a:hover:after {
+    background: #d10001 !important;
+}
+
+
+td:nth-of-type(n) a {
+    font: 400 1.5rem / .8 'Nunito Sans', sans-serif;
+    color: #101010;
+}
+
+td:last-of-type a {
+    color: #f70001;
+}
+
+td:nth-of-type(n) a:after {
+    background: #101010;
+}
+
+td:last-of-type a:after {
+    background: #f70001;
+}
+
+.magento-2__result {
+    margin-top: 5rem;
+}
+
+.magento-2__result_h4 {
+    font: 700 1.8rem / .8 'Nunito Sans', sans-serif;
+}
+
+.magento-2-main .p-text {
+    text-align: justify;
+}
+
+/*   Responsive   */
+
+@media screen and (max-width : 1440px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .table-wrap {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .mobile-none {
+        display: none !important;
+    }
+    
+    .mobile-width-100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width : 832px) {
+    
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 668px) {
+   
+    html {
+        font-size: 7.5px;
+    }
+}
+
+@media screen and (max-width : 420px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 380px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 360px) {
+   
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+   
+    html {
+        font-size: 4.75px;
+    }
+}

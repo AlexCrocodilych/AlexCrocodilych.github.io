@@ -1,0 +1,170 @@
+/*   Claim Your Website Page   */
+
+.page-top__bg {
+    position: fixed;
+}
+
+.page-top__bg_container {
+    height: 100%;
+}
+
+.page-top__bg_item:nth-of-type(1) {
+    top: 0;
+    right: 13rem;
+    background: #f0f0f0;
+}
+
+.page-top__bg_item:nth-of-type(2) {
+    top: 20rem;
+    right: -7rem;
+    background: #ffffff;
+}
+
+.page-top__bg_item:nth-of-type(3) {
+    top: 20rem;
+    right: 33rem;
+    background: #e8e8e8;
+}
+
+.page-top__bg_item:nth-of-type(4) {
+    top: 40rem;
+    right: 53rem;
+    background: #ffffff;
+}
+
+.page-top__bg_item:nth-of-type(5) {
+    top: 40rem;
+    right: 13rem;
+    background: #ececec;
+}
+
+.page-top__bg_item:nth-of-type(6) {
+    top: 60rem;
+    right: -27rem;
+    background: #e8e8e8;
+}
+
+.page-top__bg_item:nth-of-type(7) {
+    top: 80rem;
+    right: -7rem;
+    background: #d9d9d9;
+}
+
+.page-top__bg:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 52.5%;
+    height: calc(100% - 15rem);
+    width: 40%;
+    margin: auto;
+    background:
+        url(../images/man-04.webp) 0 100% / contain no-repeat,
+        url(../images/man-04.png) 0 100% / contain no-repeat;
+    filter: drop-shadow(.5rem .5rem 1rem rgba(0,0,0,.15));
+}
+
+.page-top__container {
+    padding: 5rem 3rem;
+    justify-content: center;
+}
+
+.claim-top__content {
+    z-index: 2;
+    width: calc(50% - 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.claim-top__content_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.claim-form {
+    margin-top: 4.75rem;
+}
+
+.claim-form .button {
+    align-self: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/*   Responsive   */
+
+@media screen and (max-width : 1440px) {
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .mobile-none {
+        display: none !important;
+    }
+    
+    .mobile-width-100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width : 832px) {
+    
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 668px) {
+   
+    html {
+        font-size: 7.5px;
+    }
+}
+
+@media screen and (max-width : 420px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 380px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 360px) {
+   
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+   
+    html {
+        font-size: 4.75px;
+    }
+}
