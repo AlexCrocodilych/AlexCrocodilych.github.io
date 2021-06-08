@@ -1,4 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat/montserrat-regular.woff2') format('woff2'),
+    url('../fonts/montserrat/montserrat-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: italic;
+  src: local(''),
+    url('../fonts/montserrat/montserrat-regular-italic.woff2') format('woff2'),
+    url('../fonts/montserrat/montserrat-regular-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat/montserrat-medium.woff2') format('woff2'),
+    url('../fonts/montserrat/montserrat-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat/montserrat-semibold.woff2') format('woff2'),
+    url('../fonts/montserrat/montserrat-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat/montserrat-bold.woff2') format('woff2'),
+    url('../fonts/montserrat/montserrat-bold.woff') format('woff');
+}
 
 /*   My variables   */
 
@@ -10,15 +53,14 @@
   --color-01-light-ultra: hsla(var(--base-color-01), 80%, 95%, 1);
   --color-01-light-soft: hsla(var(--base-color-01), 80%, 95%, 1);
   --color-01-light-easy: hsla(var(--base-color-01), 80%, 30%, .1);
-  --base-color-02: 198;
   --base-color-02: calc(var(--base-color-01) - 14);
   --color-02-normal: hsla(var(--base-color-02), 100%, 44%, 1);
   --color-02-light: hsla(var(--base-color-02), 100%, 65%, 1);
   --color-02-light-ultra: hsla(var(--base-color-02), 88%, 98%, 1);
   --color-02-light-soft: hsla(var(--base-color-02), 88%, 94%, 1);
   --color-02-light-easy: hsla(var(--base-color-02), 88%, 90%, 1);
-  --max-basis: 2;
-  --min-basis: 1;
+  --max-basis: 1;
+  --min-basis: .6;
   --ratio: * ((var(--max-basis) * 1px - (var(--width-container) * 1px - 100vw) * ((var(--max-basis) - var(--min-basis)) / (var(--width-container) - 320))) / var(--max-basis));
 }
 
@@ -382,10 +424,10 @@ html {
 }
 
 .title-section {
-  margin: -.3em 0;
+  margin: -.2em 0;
   font-size: clamp(22.5px, 45 var(--ratio), 45px);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -411,7 +453,7 @@ a[data-title]:after {
   box-shadow: 0 clamp(3px, 6 var(--ratio), 6px) clamp(6px, 12 var(--ratio), 12px) hsla(var(--base-color-01), 100%, 44%, .05);
   border: 2px solid var(--color-02-light-soft);
   border-radius: 5px;
-  background: rgba(255,255,255,.925);
+  background: rgba(255, 255, 255, .925);
   font-size: clamp(6px, 11 var(--ratio), 11px);
   font-weight: 600;
   line-height: 1.4;
@@ -532,51 +574,48 @@ a[data-title]:hover:after {
 }
 
 .item--top-right:before {
-  clip-path: polygon(
-    0 0,
-    calc(100% - clamp(65px, 130 var(--ratio), 130px) - clamp(30px, 60 var(--ratio), 60px)) 0,
-    calc(100% - clamp(65px, 130 var(--ratio), 130px) - clamp(30px, 60 var(--ratio), 60px)) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
-    calc(100% - clamp(65px, 130 var(--ratio), 130px) + clamp(30px, 60 var(--ratio), 60px)) clamp(10px, 20 var(--ratio), 20px),
-    calc(100% - clamp(65px, 130 var(--ratio), 130px) + clamp(30px, 60 var(--ratio), 60px)) 0,
-    100% 0,
-    100% 100%,
-    0 100%);
+  clip-path: polygon(0 0,
+      calc(100% - clamp(65px, 130 var(--ratio), 130px) - clamp(30px, 60 var(--ratio), 60px)) 0,
+      calc(100% - clamp(65px, 130 var(--ratio), 130px) - clamp(30px, 60 var(--ratio), 60px)) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
+      calc(100% - clamp(65px, 130 var(--ratio), 130px) + clamp(30px, 60 var(--ratio), 60px)) clamp(10px, 20 var(--ratio), 20px),
+      calc(100% - clamp(65px, 130 var(--ratio), 130px) + clamp(30px, 60 var(--ratio), 60px)) 0,
+      100% 0,
+      100% 100%,
+      0 100%);
 }
 
 .item--bottom:before {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    calc(50% + clamp(30px, 60 var(--ratio), 60px)) 100%,
-    calc(50% + clamp(30px, 60 var(--ratio), 60px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(50% - clamp(30px, 60 var(--ratio), 60px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(50% - clamp(30px, 60 var(--ratio), 60px)) 100%,
-    0 100%);
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      calc(50% + clamp(30px, 60 var(--ratio), 60px)) 100%,
+      calc(50% + clamp(30px, 60 var(--ratio), 60px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(50% - clamp(30px, 60 var(--ratio), 60px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(50% - clamp(30px, 60 var(--ratio), 60px)) 100%,
+      0 100%);
 }
 
 .item--left:before {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 100%,
-    0 calc(50% + clamp(30px, 60 var(--ratio), 60px)),
-    clamp(10px, 20 var(--ratio), 20px) calc(50% + clamp(30px, 60 var(--ratio), 60px)),
-    clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
-    calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
-    clamp(10px, 20 var(--ratio), 20px) calc(50% - clamp(30px, 60 var(--ratio), 60px)),
-    0 calc(50% - clamp(30px, 60 var(--ratio), 60px)));
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 calc(50% + clamp(30px, 60 var(--ratio), 60px)),
+      clamp(10px, 20 var(--ratio), 20px) calc(50% + clamp(30px, 60 var(--ratio), 60px)),
+      clamp(10px, 20 var(--ratio), 20px) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) calc(100% - clamp(10px, 20 var(--ratio), 20px)),
+      calc(100% - clamp(10px, 20 var(--ratio), 20px)) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) clamp(10px, 20 var(--ratio), 20px),
+      clamp(10px, 20 var(--ratio), 20px) calc(50% - clamp(30px, 60 var(--ratio), 60px)),
+      0 calc(50% - clamp(30px, 60 var(--ratio), 60px)));
 }
 
 .item--border:after {
@@ -615,8 +654,8 @@ a[data-title]:hover:after {
   right: clamp(10px, 20 var(--ratio), 20px);
   bottom: clamp(10px, 20 var(--ratio), 20px);
   left: clamp(10px, 20 var(--ratio), 20px);
-  overflow: hidden;
   filter: drop-shadow(clamp(3px, 6 var(--ratio), 6px) clamp(3px, 6 var(--ratio), 6px) clamp(6px, 12 var(--ratio), 12px) hsla(var(--base-color-01), 100%, 44%, .025));
+  overflow: hidden;
 }
 
 .item--background:before {
@@ -641,8 +680,8 @@ a[data-title]:hover:after {
   width: clamp(60px, 120 var(--ratio), 120px);
   height: clamp(60px, 120 var(--ratio), 120px);
   margin: auto;
-  border: clamp(15px, 30 var(--ratio), 30px) solid #ffffff;
   border-radius: 50%;
+  border: clamp(15px, 30 var(--ratio), 30px) solid #ffffff;
 }
 
 .header {
@@ -695,40 +734,21 @@ a[data-title]:hover:after {
   padding: 0 clamp(10px, 20 var(--ratio), 20px);
   display: flex;
   align-items: center;
-  font-size: clamp(6px, 12 var(--ratio), 12px);
-  font-weight: 600;
   text-transform: uppercase;
   transition-property: background, color, transform;
   transition-duration: .2s;
   transition-timing-function: linear;
 }
 
-.menu__unit--bg {
-  position: fixed;
-  z-index: -1;
-  top: clamp(40px, 80 var(--ratio), 80px);
-  left: 0;
-  width: 0;
-  height: calc(100vh - clamp(40px, 80 var(--ratio), 80px));
-  transition: width 0s linear .25s;
-}
-
-.menu__unit--bg:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-02-normal);
-  opacity: 0;
-  transition: opacity .2s linear;
+.menu__link,
+.menu__headline {
+  font-size: clamp(6px, 12 var(--ratio), 12px);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .switch-menu__icon {
-  width: clamp(4px, 8 var(--ratio), 8px);
-  height: clamp(4px, 8 var(--ratio), 8px);
-  margin-left: clamp(4px, 8 var(--ratio), 8px);
+  margin-left: clamp(5px, 10 var(--ratio), 10px);
   display: flex;
   fill: var(--color-01-normal);
   transform: scale(1);
@@ -765,6 +785,28 @@ a[data-title]:hover:after {
   transition-timing-function: linear;
 }
 
+.menu__unit--bg {
+  position: fixed;
+  z-index: -1;
+  top: clamp(40px, 80 var(--ratio), 80px);
+  left: 0;
+  width: 0;
+  height: calc(100vh - clamp(40px, 80 var(--ratio), 80px));
+  transition: width 0s linear .25s;
+}
+
+.menu__unit--bg:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-02-normal);
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
 .main {
   padding-top: clamp(40px, 80 var(--ratio), 80px);
 }
@@ -782,7 +824,7 @@ a[data-title]:hover:after {
 }
 
 .home-top__title {
-  width: 85%;
+  max-width: clamp(325px, 650 var(--ratio), 650px);
   margin: -.35em 0;
   font-size: clamp(17.5px, 35 var(--ratio), 35px);
   font-weight: 700;
@@ -819,8 +861,8 @@ a[data-title]:hover:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   box-shadow: 0 clamp(5px, 10 var(--ratio), 10px) clamp(10px, 20 var(--ratio), 20px) hsla(var(--base-color-02), 100%, 44%, .05);
+  border-radius: 50%;
   background: #fff;
   transition-property: box-shadow, transform;
   transition-duration: .2s;
@@ -838,9 +880,12 @@ a[data-title]:hover:after {
 }
 
 .clouds__image {
-  display: flex;
   width: 55%;
   height: 55%;
+  display: flex;
+  font-size: clamp(5px, 10 var(--ratio), 10px);
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .clouds__item:nth-of-type(2) .clouds__image {
@@ -878,8 +923,8 @@ a[data-title]:hover:after {
 }
 
 .series__list {
-  display: flex;
   width: 100%;
+  display: flex;
 }
 
 .series__item {
@@ -904,6 +949,10 @@ a[data-title]:hover:after {
 
 .series__image {
   height: clamp(20px, 40 var(--ratio), 40px);
+  margin: -.35em 0;
+  font-size: clamp(8px, 16 var(--ratio), 16px);
+  font-weight: 700;
+  line-height: 1.4;
   filter: drop-shadow(clamp(3px, 6 var(--ratio), 6px) clamp(3px, 6 var(--ratio), 6px) clamp(6px, 12 var(--ratio), 12px) hsla(var(--base-color-01), 100%, 44%, .15));
 }
 
@@ -1051,6 +1100,7 @@ a[data-title]:hover:after {
 .quote-testimonials__text {
   margin: -.55em 0;
   font-size: clamp(10px, 16 var(--ratio), 16px);
+  font-weight: 400;
   font-style: italic;
   line-height: 1.6;
 }
@@ -1229,7 +1279,7 @@ a:hover .footer__text {
 .info-footer__text {
   justify-content: center;
   text-align: center;
-  color: rgba(255,255,255,.65);
+  color: rgba(255, 255, 255, .65);
 }
 
 .info-footer__data {
@@ -1238,42 +1288,42 @@ a:hover .footer__text {
 }
 
 @media screen and (max-width : 1168px) {
-  
+
   .subscribe-footer__content {
     border-radius: clamp(10px, 20 var(--ratio), 20px);
   }
 }
 
 @media screen and (min-width : 1001px) {
-  
+
   .menu__unit {
     height: 100%;
   }
-  
+
   .menu__unit:hover .menu__link,
   .menu__link:hover {
     background: var(--color-02-light-ultra);
     color: var(--color-02-normal);
   }
-  
+
   .menu__unit:hover .switch-menu__icon {
     fill: var(--color-02-normal);
     transform: scale(-1);
   }
-  
+
   .menu__switch:hover + .sub-menu {
     left: 0;
     transform: translateY(0);
   }
-  
+
   .sub-menu {
     position: fixed;
     top: clamp(40px, 80 var(--ratio), 80px);
     left: -100%;
     width: 100%;
     height: auto;
-    overflow: hidden;
     transform: scaleY(0);
+    overflow: hidden;
     transition-property: left, transform;
     transition-delay: .2s;
     transition-timing-function: linear;
@@ -1284,6 +1334,12 @@ a:hover .footer__text {
     transform: translateY(0);
   }
   
+  .switch-menu__icon {
+    width: clamp(4px, 8 var(--ratio), 8px);
+    height: clamp(4px, 8 var(--ratio), 8px);
+    margin-top: calc(-1 * clamp(1px, 1 var(--ratio), 1px));
+  }
+
   .sub-menu__list {
     width: 100%;
     padding: clamp(15px, 30 var(--ratio), 30px) 0;
@@ -1301,11 +1357,15 @@ a:hover .footer__text {
   .sub-menu__list:hover {
     transform: translateY(0);
   }
-  
+
   .sub-menu__column + .sub-menu__column {
     margin-left: clamp(25px, 50 var(--ratio), 50px);
   }
   
+  .switch-sub-menu__icon {
+    display: none;
+  }
+
   .sub-sub-menu__item:before {
     content: '';
     position: relative;
@@ -1318,17 +1378,17 @@ a:hover .footer__text {
     border-radius: 50%;
     background: var(--color-02-normal);
   }
-  
+
   .sub-sub-menu__link:hover {
     background: var(--color-02-light-soft);
     color: var(--color-02-normal);
   }
-  
+
   .menu__unit:hover + .menu__unit--bg {
     width: 100%;
     transition-delay: 0s;
   }
-  
+
   .menu__unit:hover + .menu__unit--bg:after {
     opacity: .15;
   }
@@ -1338,6 +1398,7 @@ a:hover .footer__text {
 
   .header__logo {
     order: 1;
+    margin: 0 clamp(15px, 30 var(--ratio), 30px);
   }
 
   .menu {
@@ -1357,7 +1418,7 @@ a:hover .footer__text {
     fill: var(--color-02-normal);
     cursor: pointer;
   }
-  
+
   .toggle-menu:before {
     content: '';
     position: absolute;
@@ -1422,7 +1483,7 @@ a:hover .footer__text {
   .menu__item {
     position: relative;
   }
-  
+
   .menu__unit {
     overflow: hidden;
   }
@@ -1430,7 +1491,7 @@ a:hover .footer__text {
   .menu__link {
     background: #fff;
   }
-  
+
   .menu__link,
   .sub-menu__switch,
   .sub-sub-menu__link {
@@ -1444,20 +1505,20 @@ a:hover .footer__text {
     transition-duration: .2s;
     transition-timing-function: linear;
   }
-  
+
   .menu__link,
   .sub-menu__switch,
   .sub-sub-menu__link,
-  .sub-menu__headline {
+  .menu__headline {
     font-size: clamp(10px, 20 var(--ratio), 20px);
   }
-  
+
   .menu__link:hover,
   .sub-menu__switch:hover,
   .sub-sub-menu__link:hover {
     background: var(--color-01-light-soft);
   }
-  
+
   .menu__link:after,
   .sub-menu__switch:after,
   .sub-sub-menu__link:after {
@@ -1469,32 +1530,32 @@ a:hover .footer__text {
     height: 100%;
     transition: background .2s linear;
   }
-  
+
   input:checked + .switch-menu:after {
     background: var(--color-02-normal);
   }
-  
+
   .menu__link:hover:after,
   .sub-menu__switch:hover:after,
   .sub-sub-menu__link:hover:after,
   input:checked + .switch-menu:hover:after {
     background: var(--color-01-normal);
   }
-  
+
   .switch-menu {
     z-index: 2;
     justify-content: space-between;
     cursor: pointer;
   }
-  
+
   .menu__headline {
     font-weight: 600;
   }
-  
+
   input:checked + label .menu__headline {
     color: var(--color-02-normal);
   }
-  
+
   .sub-menu,
   .sub-sub-menu {
     height: 0;
@@ -1505,23 +1566,23 @@ a:hover .footer__text {
     transition-duration: .2s;
     transition-timing-function: linear;
   }
-  
+
   input:checked + .switch-menu + .sub-menu,
   input:checked + .sub-menu__switch + .sub-sub-menu {
     height: 100%;
     transform: translateY(0);
   }
-  
+
   .sub-menu__container {
     width: auto;
     padding: 0;
     flex-direction: column;
   }
-  
+
   .sub-menu__column {
     overflow: hidden;
   }
-  
+
   .sub-menu__switch {
     z-index: 2;
     padding-left: clamp(25px, 50 var(--ratio), 50px);
@@ -1529,37 +1590,37 @@ a:hover .footer__text {
     align-items: center;
     text-transform: uppercase;
   }
-  
+
   .switch-menu__icon {
     width: clamp(6px, 12 var(--ratio), 12px);
     height: clamp(6px, 12 var(--ratio), 12px);
   }
-  
+
   input:checked + .sub-menu__switch .sub-menu__headline {
     color: var(--color-02-normal);
   }
-  
+
   input:checked + .switch-menu .switch-menu__icon,
   input:checked + .sub-menu__switch .switch-menu__icon {
     fill: var(--color-02-normal);
     transform: scaleY(-1);
   }
-  
+
   .sub-sub-menu {
     background: var(--color-02-light-soft);
   }
-  
+
   .sub-sub-menu__item,
   .sub-sub-menu__link {
     width: 100%;
   }
-  
+
   .sub-sub-menu__link {
     padding: clamp(15px, 30 var(--ratio), 30px);
     padding-left: clamp(25px, 50 var(--ratio), 50px);
     align-items: center;
   }
-  
+
   .sub-sub-menu__link:before {
     content: '';
     width: clamp(4px, 8 var(--ratio), 8px);
@@ -1568,7 +1629,7 @@ a:hover .footer__text {
     border-radius: 50%;
     background: var(--color-02-normal);
   }
-  
+
   .menu__item:last-of-type {
     padding: clamp(15px, 30 var(--ratio), 30px);
     display: flex;
@@ -1612,12 +1673,12 @@ a:hover .footer__text {
     height: 45%;
     display: flex;
   }
-  
+
   input:checked + .toggle-menu + .menu__list .menu__unit--bg {
     width: 100%;
     transition-delay: 0s;
   }
-  
+
   input:checked + .toggle-menu + .menu__list .menu__unit--bg:after {
     opacity: .15;
   }
@@ -1626,7 +1687,7 @@ a:hover .footer__text {
 @media screen and (max-width : 768px) {
 
   .mobile-width--100 {
-    width: 100% !important;
+    width: 100%;
   }
 
   .mobile-flex--wrap {
@@ -1668,11 +1729,11 @@ a:hover .footer__text {
   .about__numbers {
     margin-top: clamp(25px, 50 var(--ratio), 50px);
   }
-  
+
   .links-footer__column {
     flex: 1 0 auto;
   }
-  
+
   .info-footer__links,
   .info-footer__data {
     flex: 1 0 auto;
@@ -1680,7 +1741,7 @@ a:hover .footer__text {
 }
 
 @media screen and (max-width : 640px) {
-  
+
   .menu__list {
     width: 100%;
   }

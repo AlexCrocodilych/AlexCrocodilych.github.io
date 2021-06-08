@@ -57,13 +57,13 @@
                 </svg>
               </label>
               <div class="menu__sub-menu sub-menu">
-                <ul class="sub-menu__list">
-                  <div class="sub-menu__container container">
+                <div class="sub-menu__list">
+                  <ul class="sub-menu__container container">
                     <li class="sub-menu__column">
                       <input id="solutions-platforms" type="checkbox" hidden>
-                      <label class="sub-menu__switch" for="solutions-platforms">
+                      <label class="sub-menu__switch switch-sub-menu" for="solutions-platforms">
                         <span class="menu__headline">Platforms</span>
-                        <svg class="switch-menu__icon" display="none">
+                        <svg class="switch-menu__icon switch-sub-menu__icon" display="none">
                           <use xlink:href="icons/icons.svg#menu-switch" />
                         </svg>
                       </label>
@@ -87,9 +87,9 @@
                     </li>
                     <li class="sub-menu__column">
                       <input id="solutions-cloud-services" type="checkbox" hidden>
-                      <label class="sub-menu__switch" for="solutions-cloud-services">
+                      <label class="sub-menu__switch switch-sub-menu" for="solutions-cloud-services">
                         <span class="menu__headline">Cloud Services</span>
-                        <svg class="switch-menu__icon" display="none">
+                        <svg class="switch-menu__icon switch-sub-menu__icon" display="none">
                           <use xlink:href="icons/icons.svg#menu-switch" />
                         </svg>
                       </label>
@@ -110,9 +110,9 @@
                     </li>
                     <li class="sub-menu__column">
                       <input id="solutions-services" type="checkbox" hidden>
-                      <label class="sub-menu__switch" for="solutions-services">
+                      <label class="sub-menu__switch switch-sub-menu" for="solutions-services">
                         <span class="menu__headline">Services</span>
-                        <svg class="switch-menu__icon" display="none">
+                        <svg class="switch-menu__icon switch-sub-menu__icon" display="none">
                           <use xlink:href="icons/icons.svg#menu-switch" />
                         </svg>
                       </label>
@@ -125,8 +125,8 @@
                         </li>
                       </ul>
                     </li>
-                  </div>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="menu__unit--bg"></div>
@@ -186,7 +186,7 @@
       <div class="container--row container">
         <div class="home-top__content mobile-width--100">
           <div class="home-top__info">
-            <h1 class="home-top__title">
+            <h1 class="home-top__title mobile-width--100">
               <span>We are <span class="color--02">platform agnostic</span> cloud and <span class="color--02">infrastructure specialists,</span></span>
               <span class="home-top__title--style">modernising hosting <strong>mission-critical</strong> and/or <strong>ecommerce applications.</strong></span>
             </h1>
@@ -210,7 +210,7 @@
             </li>
           </ul>
         </div>
-        <img class="home-top__image" src="images/hosting-01.svg" height="100vh" alt="" hidden>
+        <img class="home-top__image" src="images/hosting-01.svg" alt="" hidden>
       </div>
     </section>
     <section class="series-platform series section">
@@ -388,7 +388,7 @@
               <figcaption class="testimonials__info">
                 <picture class="testimonials__image image--container">
                   <source srcset="images/testimonials-01-1x.webp 1x, images/testimonials-01-2x.webp 2x" type="image/webp">
-                  <img class="image--cover" src="images/testimonials-01-1x.png" srcset="images/testimonials-01-2x.png 2x" alt="">
+                  <img class="image--cover" src="images/testimonials-01-1x.png" srcset="images/testimonials-01-2x.png 2x" width="90" alt="">
                 </picture>
                 <div class="testimonials__client">
                   <h4 class="testimonials__title">David Wynne</h4>
@@ -406,7 +406,7 @@
               <figcaption class="testimonials__info">
                 <picture class="testimonials__image image--container">
                   <source srcset="images/testimonials-02-1x.webp 1x, images/testimonials-02-2x.webp 2x" type="image/webp">
-                  <img class="image--cover" src="images/testimonials-02-1x.png" srcset="images/testimonials-02-2x.png 2x" alt="">
+                  <img class="image--cover" src="images/testimonials-02-1x.png" srcset="images/testimonials-02-2x.png 2x" width="90" alt="">
                 </picture>
                 <div class="testimonials__client">
                   <h4 class="testimonials__title">Gail Hounslea</h4>
@@ -592,7 +592,9 @@
             </ul>
           </div>
           <div class="info-footer__data">
-            <p class="info-footer__text footer__text">Copyright © <script>new Date().getFullYear() > 2010 && document.write(+new Date().getFullYear());</script> CoreFinity. All rights reserved.</p>
+            <p class="info-footer__text footer__text">Copyright © <script>
+                new Date().getFullYear() > 2010 && document.write(+new Date().getFullYear());
+              </script> CoreFinity. All rights reserved.</p>
           </div>
         </div>
       </div>
