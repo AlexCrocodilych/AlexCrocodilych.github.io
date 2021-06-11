@@ -1,0 +1,21 @@
+{
+  "name": "corefinity.com",
+  "short_name": "CoreFinity",
+  "display": "standalone",
+  "background_color": "#95a5a6",
+  "theme_color": "#95a5a6",
+  "start_url": "https://alexcrocodilych.github.io/corefinity-012/",
+  "scope": "https://alexcrocodilych.github.io/corefinity-012/",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+    ]
+}
