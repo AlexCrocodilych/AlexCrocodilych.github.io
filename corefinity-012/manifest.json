@@ -4,8 +4,8 @@
   "display": "standalone",
   "background_color": "#95a5a6",
   "theme_color": "#95a5a6",
-  "start_url": "../index.html",
-  "scope": "https://alexcrocodilych.github.io/corefinity-012/",
+  "start_url": "/",
+  "scope": "/",
   "icons": [
     {
       "src": "images/icon-192.png",
@@ -18,11 +18,5 @@
       "sizes": "512x512"
     }
     ],
-  "prefer_related_applications": true,
-  "related_applications": [{
-    "platform": "web"
-  }, {
-    "platform": "play",
-    "url": "https://alexcrocodilych.github.io/corefinity-012/"
-  }]
+  "prefer_related_applications": false
 }
