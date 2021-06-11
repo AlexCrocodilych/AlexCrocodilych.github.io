@@ -422,7 +422,7 @@ html {
 
 .slogan-section {
   margin: -.3em 0;
-  font-size: clamp(10px, 18 var(--ratio), 18px);
+  font-size: clamp(12px, 18 var(--ratio), 18px);
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: .5em;
@@ -444,7 +444,7 @@ html {
 
 .text {
   margin: -.4em 0;
-  font-size: clamp(10px, 15 var(--ratio), 15px);
+  font-size: clamp(12px, 15 var(--ratio), 15px);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -459,7 +459,7 @@ html {
   box-shadow: 0 clamp(3px, 6 var(--ratio), 6px) clamp(6px, 12 var(--ratio), 12px) hsla(var(--base-color-02), 100%, 44%, .25);
   border-radius: clamp(20px, 40 var(--ratio), 40px);
   background: var(--color-02-normal);
-  font-size: clamp(7px, 14 var(--ratio), 14px);
+  font-size: clamp(10px, 14 var(--ratio), 14px);
   font-weight: 600;
   text-transform: uppercase;
   white-space: nowrap;
@@ -891,7 +891,7 @@ html {
 .series__title {
   margin: -.35em 0;
   flex-shrink: 0;
-  font-size: clamp(10px, 20 var(--ratio), 20px);
+  font-size: clamp(12px, 20 var(--ratio), 20px);
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
@@ -1035,7 +1035,7 @@ html {
 
 .features-about__title {
   margin: -.4em 0;
-  font-size: clamp(10px, 20 var(--ratio), 20px);
+  font-size: clamp(12px, 20 var(--ratio), 20px);
   font-weight: 700;
   line-height: 1.4;
 }
@@ -1107,7 +1107,7 @@ html {
 
 .quote-testimonials__text {
   margin: -.55em 0;
-  font-size: clamp(10px, 16 var(--ratio), 16px);
+  font-size: clamp(12px, 16 var(--ratio), 16px);
   font-weight: 400;
   font-style: italic;
   line-height: 1.6;
@@ -1139,7 +1139,7 @@ html {
 
 .testimonials__title {
   margin: -.4em 0;
-  font-size: clamp(10px, 18 var(--ratio), 18px);
+  font-size: clamp(12px, 18 var(--ratio), 18px);
   font-weight: 700;
   line-height: 1.5;
 }
@@ -1252,9 +1252,9 @@ html {
 }
 
 .links-footer__pic {
-  width: clamp(10px, 20 var(--ratio), 20px);
-  height: clamp(10px, 20 var(--ratio), 20px);
-  margin-right: clamp(8px, 16 var(--ratio), 16px);
+  width: clamp(15px, 20 var(--ratio), 20px);
+  height: clamp(15px, 20 var(--ratio), 20px);
+  margin-right: clamp(10px, 16 var(--ratio), 16px);
   display: flex;
   flex-shrink: 0;
   fill: var(--color-02-normal);
@@ -1264,7 +1264,7 @@ html {
   margin: -.35em 0;
   display: flex;
   align-items: center;
-  font-size: clamp(10px, 15 var(--ratio), 15px);
+  font-size: clamp(12px, 15 var(--ratio), 15px);
   font-weight: 400;
   line-height: 1.4;
   color: #fff;
