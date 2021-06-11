@@ -17,5 +17,12 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-    ]
+    ],
+  "prefer_related_applications": true,
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://alexcrocodilych.github.io/corefinity-012/"
+  }]
 }
