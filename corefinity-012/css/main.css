@@ -1005,7 +1005,7 @@ html {
 }
 
 .about__content {
-  width: calc(100% / 2 - clamp(12.5px, 25 var(--ratio), 25px));
+  width: calc(100% / 2 - clamp(7.5px, 15 var(--ratio), 15px));
   display: flex;
   flex-direction: column;
 }
@@ -1045,7 +1045,7 @@ html {
 }
 
 .about__numbers {
-  width: calc(100% / 2 - clamp(12.5px, 25 var(--ratio), 25px));
+  width: calc(100% / 2 - clamp(7.5px, 15 var(--ratio), 15px));
 }
 
 .numbers-about {
@@ -1679,7 +1679,7 @@ html {
     top: clamp(40px, 80 var(--ratio), 80px);
     left: -100%;
     min-width: 50%;
-    height: calc(100vh - clamp(40px, 80 var(--ratio), 80px));
+    min-height: calc(100vh - clamp(40px, 80 var(--ratio), 80px));
     flex-direction: column;
     border-top: 2px solid var(--color-01-light-easy);
     background: #ffffff;
