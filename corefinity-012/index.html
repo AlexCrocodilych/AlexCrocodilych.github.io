@@ -20,7 +20,7 @@
   <meta http-equiv="cache-control" content="public">
   <link rel="icon" href="images/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/icon-192.png">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="canonical" href="https://alexcrocodilych.github.io/corefinity-012/">
   <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/montserrat/montserrat-regular-italic.woff2" as="font" type="font/woff2" crossorigin>
@@ -195,7 +195,9 @@
           </li>
         </ul>
       </nav>
-      <a class="header__button button focus--style" href="#">Start for free</a>
+      <a class="header__button button focus--style" href="#">
+        <span class="button__text">Start for free</span>
+      </a>
     </div>
   </header>
   <main class="main">
@@ -491,7 +493,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#link-icon" />
                   </svg>
-                  <p class="footer__text">Support</p>
+                  <p class="footer__text text">Support</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -499,7 +501,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#link-icon" />
                   </svg>
-                  <p class="footer__text">Certifications</p>
+                  <p class="footer__text text">Certifications</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -507,7 +509,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#link-icon" />
                   </svg>
-                  <p class="footer__text">Documentation</p>
+                  <p class="footer__text text">Documentation</p>
                 </a>
               </li>
             </ul>
@@ -520,7 +522,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#facebook-icon" />
                   </svg>
-                  <p class="footer__text">Facebook</p>
+                  <p class="footer__text text">Facebook</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -528,7 +530,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#instagram-icon" />
                   </svg>
-                  <p class="footer__text">Instagram</p>
+                  <p class="footer__text text">Instagram</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -536,7 +538,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#twitter-icon" />
                   </svg>
-                  <p class="footer__text">Twitter</p>
+                  <p class="footer__text text">Twitter</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -544,7 +546,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#linkedin-icon" />
                   </svg>
-                  <p class="footer__text">Linkedin</p>
+                  <p class="footer__text text">Linkedin</p>
                 </a>
               </li>
             </ul>
@@ -557,7 +559,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#footer-phone" />
                   </svg>
-                  <p class="footer__text">+44-330-113-1510</p>
+                  <p class="footer__text text">+44-330-113-1510</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -565,7 +567,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#footer-mail" />
                   </svg>
-                  <p class="footer__text">info@corefinity.com</p>
+                  <p class="footer__text text">info@corefinity.com</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -573,7 +575,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#footer-location" />
                   </svg>
-                  <p class="footer__text">113 The Headrow, 4th floor, Leeds, LS1 5JW, UK</p>
+                  <p class="footer__text text">113 The Headrow, 4th floor, Leeds, LS1 5JW, UK</p>
                 </a>
               </li>
               <li class="links-footer__item">
@@ -581,7 +583,7 @@
                   <svg class="links-footer__pic" display="none">
                     <use xlink:href="icons/icons.svg#footer-location" />
                   </svg>
-                  <p class="footer__text">1701 Rhode Island Ave NW, Washington, DC 20036, US</p>
+                  <p class="footer__text text">1701 Rhode Island Ave NW, Washington, DC 20036, US</p>
                 </a>
               </li>
             </ul>
@@ -593,25 +595,23 @@
             <ul class="info-footer__list">
               <li class="info-footer__item">
                 <a class="footer__link focus--style" href="#">
-                  <p class="info-footer__text footer__text">Site Map</p>
+                  <p class="info-footer__text footer__text text">Site Map</p>
                 </a>
               </li>
               <li class="info-footer__item">
                 <a class="footer__link focus--style" href="#">
-                  <p class="info-footer__text footer__text">Privacy Policy</p>
+                  <p class="info-footer__text footer__text text">Privacy Policy</p>
                 </a>
               </li>
               <li class="info-footer__item">
                 <a class="footer__link focus--style" href="#">
-                  <p class="info-footer__text footer__text">Terms & Conditions</p>
+                  <p class="info-footer__text footer__text text">Terms & Conditions</p>
                 </a>
               </li>
             </ul>
           </div>
           <div class="info-footer__data">
-            <p class="info-footer__text footer__text">Copyright © <script>
-                new Date().getFullYear() > 2010 && document.write(+new Date().getFullYear());
-              </script> CoreFinity. All rights reserved.</p>
+            <p class="info-footer__text footer__text text">Copyright © 2021 CoreFinity. All rights reserved.</p>
           </div>
         </div>
       </div>
