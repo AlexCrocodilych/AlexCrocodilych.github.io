@@ -26,7 +26,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/images/icon.svg",
+      "src": "images/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
