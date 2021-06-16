@@ -832,6 +832,12 @@ html {
   display: flex;
 }
 
+.switch-menu__toggle {
+  display: flex;
+  align-items: center;
+/*  height: 100%;*/
+}
+
 .switch-menu__icon {
   margin-left: calc(10 var(--unit));
   display: flex;
@@ -1639,7 +1645,10 @@ html {
     display: flex;
     width: calc(30 var(--unit));
     height: calc(30 var(--unit));
+    fill: var(--color-02-normal);
   }
+  
+  
   
   .toggle-menu__button {
 /*    background: #f56363;*/
@@ -1796,6 +1805,8 @@ html {
   .menu__switch[open]:after {
     background: var(--color-02-normal);
   }
+  
+  
 
   .switch-menu {
     position: relative;
