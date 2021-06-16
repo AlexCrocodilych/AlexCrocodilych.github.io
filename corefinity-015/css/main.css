@@ -828,6 +828,10 @@ html {
   opacity: 1;
 }
 
+.switch-menu {
+  display: flex;
+}
+
 .switch-menu__icon {
   margin-left: calc(10 var(--unit));
   display: flex;
@@ -1633,6 +1637,8 @@ html {
 
   .toggle-menu {
     display: flex;
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
   }
   
   .toggle-menu__button {
