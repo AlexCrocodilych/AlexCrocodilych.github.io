@@ -326,6 +326,10 @@ address {
   font-style: normal;
 }
 
+summary {
+  box-sizing: border-box;
+}
+
 /*      My Style      */
 
 ::selection {
@@ -573,7 +577,6 @@ html {
   background: var(--color-02-light-ultra);
   opacity: 0;
   visibility: hidden;
-  box-sizing: border-box;
   transition-property: opacity, visibility;
   transition-duration: .2s;
   transition-timing-function: linear;
@@ -1436,6 +1439,8 @@ html {
   }
   
   .menu__item,
+  .menu__unit,
+  .switch-menu,
   .switch-menu__toggle {
     height: 100%;
   }
@@ -1627,28 +1632,31 @@ html {
   }
 
   .toggle-menu {
-    position: relative;
-    width: clamp(15px, 30 var(--ratio), 30px);
-    height: clamp(15px, 30 var(--ratio), 30px);
-    fill: var(--color-02-normal);
-    cursor: pointer;
     display: flex;
   }
-
+  
   .toggle-menu__button {
+/*    background: #f56363;*/
+  }
+
+  .toggle-menu__switch {
     position: relative;
     display: flex;
     justify-content: center;
-    width: clamp(15px, 30 var(--ratio), 30px);
-    height: clamp(15px, 30 var(--ratio), 30px);
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
     margin: 0;
     padding: 0;
+    fill: var(--color-02-normal);
+    cursor: pointer;
   }
   
-  .toggle-menu__button:focus-visible:before {
-    width: calc(100% + 16 var(--unit));
-    height: calc(100% + 16 var(--unit));
+/*
+  .toggle-menu__switch:focus-visible:before {
+    visibility: visible;
+    opacity: 1;
   }
+*/
 
   .toggle-menu__icon {
     position: absolute;
