@@ -1473,6 +1473,18 @@ html {
     text-align: center;
   }
   
+  .switch-menu__toggle {
+    padding: 0 calc(20 var(--unit));
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .sub-menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
   .menu__link:before {
     display: none;
   }
@@ -1647,6 +1659,9 @@ html {
     height: calc(30 var(--unit));
     fill: var(--color-02-normal);
   }
+  
+  
+  
   
   
   
