@@ -38,7 +38,7 @@
       </a>
       <nav class="header__menu menu">
         <details class="menu__toggle toggle-menu" hidden>
-          <summary class="toggle-menu__switch focus--style">
+          <summary class="toggle-menu__button focus--style">
             <svg class="toggle-menu__icon toggle-menu__icon--open" display="none">
               <use xlink:href="icons/icons.svg#header-nav--open" />
             </svg>
@@ -50,7 +50,7 @@
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link focus--style" href="#">
-              <span class="menu__headline ">Why</span>
+              <span class="menu__headline">Why</span>
             </a>
           </li>
           <li class="menu__item">
@@ -60,26 +60,30 @@
           </li>
           <li class="menu__item">
             <div class="menu__unit">
-              <details class="menu__switch switch-menu">
-                <summary class="switch-menu__toggle">
-                  <div class="sub-menu__link focus--style">
-                    <span class="menu__headline">Solutions</span>
-                    <svg class="switch-menu__icon" display="none">
-                      <use xlink:href="icons/icons.svg#menu-switch" />
-                    </svg>
-                  </div>
+              <details class="menu__dropdown dropdown-menu">
+                <summary class="dropdown-menu__button focus--style">
+                  <span class="dropdown-menu__caption">
+                    <span class="dropdown-menu__inner">
+                      <span class="menu__headline">Solutions</span>
+                      <svg class="dropdown-menu__icon" display="none">
+                        <use xlink:href="icons/icons.svg#menu-switch" />
+                      </svg>
+                    </span>
+                  </span>
                 </summary>
               </details>
               <div class="menu__sub-menu sub-menu">
-                <div class="sub-menu__list">
-                  <ul class="sub-menu__container container">
-                    <li class="sub-menu__column">
-                      <details class="sub-menu__switch switch-menu">
-                        <summary class="sub-menu__link">
-                          <span class="menu__headline">Platforms</span>
-                          <svg class="switch-menu__icon" display="none">
-                            <use xlink:href="icons/icons.svg#menu-switch" />
-                          </svg>
+                <div class="sub-menu__wrapper">
+                  <ul class="sub-menu__list container">
+                    <li class="sub-menu__item">
+                      <details class="sub-menu__dropdown dropdown-sub-menu">
+                        <summary class="dropdown-sub-menu__button">
+                          <span class="dropdown-sub-menu__caption">
+                            <span class="menu__headline">Platforms</span>
+                            <svg class="dropdown-sub-menu__icon" display="none">
+                              <use xlink:href="icons/icons.svg#menu-switch" />
+                            </svg>
+                          </span>
                         </summary>
                       </details>
                       <ul class="sub-sub-menu">
@@ -100,13 +104,15 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="sub-menu__column">
-                      <details class="sub-menu__switch switch-menu">
-                        <summary class="sub-menu__link">
-                          <span class="menu__headline">Cloud Services</span>
-                          <svg class="switch-menu__icon" display="none">
-                            <use xlink:href="icons/icons.svg#menu-switch" />
-                          </svg>
+                    <li class="sub-menu__item">
+                      <details class="sub-menu__dropdown dropdown-sub-menu">
+                        <summary class="dropdown-sub-menu__button">
+                          <span class="dropdown-sub-menu__caption">
+                            <span class="menu__headline">Cloud Services</span>
+                            <svg class="dropdown-sub-menu__icon" display="none">
+                              <use xlink:href="icons/icons.svg#menu-switch" />
+                            </svg>
+                          </span>
                         </summary>
                       </details>
                       <ul class="sub-sub-menu">
@@ -124,13 +130,15 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="sub-menu__column">
-                      <details class="sub-menu__switch switch-menu">
-                        <summary class="sub-menu__link">
-                          <span class="menu__headline">Services</span>
-                          <svg class="switch-menu__icon" display="none">
-                            <use xlink:href="icons/icons.svg#menu-switch" />
-                          </svg>
+                    <li class="sub-menu__item">
+                      <details class="sub-menu__dropdown dropdown-sub-menu">
+                        <summary class="dropdown-sub-menu__button">
+                          <span class="dropdown-sub-menu__caption">
+                            <span class="menu__headline">Services</span>
+                            <svg class="dropdown-sub-menu__icon" display="none">
+                              <use xlink:href="icons/icons.svg#menu-switch" />
+                            </svg>
+                          </span>
                         </summary>
                       </details>
                       <ul class="sub-sub-menu">
@@ -149,17 +157,17 @@
             </div>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link focus--style" href="#">
               <span class="menu__headline">Schedule a demo</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link focus--style" href="#">
               <span class="menu__headline">Blog</span>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link focus--style" href="#">
               <span class="menu__headline">Contact</span>
             </a>
           </li>
