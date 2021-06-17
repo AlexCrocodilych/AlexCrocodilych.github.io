@@ -888,9 +888,9 @@ html {
   position: fixed;
   z-index: -1;
   top: calc(80 var(--unit));
-  right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
   visibility: hidden;
   transition-property: visibility;
   transition-duration: 0;
@@ -1757,6 +1757,10 @@ html {
     display: none;
   }
   
+  .dropdown-menu__button.focus--style:before {
+    display: none;
+  }
+  
   .dropdown-sub-menu__caption {
     z-index: 2;
     padding-left: calc(2 var(--gap));
@@ -1916,14 +1920,12 @@ html {
     display: flex;
   }
 
-  .toggle-menu[open] + .menu__list .menu__unit--bg,
-  .dropdown-menu[open] + .sub-menu + .menu__unit--bg {
+  .toggle-menu[open] + .menu__list .menu__unit--bg {
     visibility: visible;
     transition-delay: 0s;
   }
   
-  .toggle-menu[open] + .menu__list .menu__unit--bg:before,
-  .dropdown-menu[open] + .sub-menu + .menu__unit--bg:before {
+  .toggle-menu[open] + .menu__list .menu__unit--bg:before {
     opacity: .15;
   }
   
@@ -2090,14 +2092,12 @@ html {
     pointer-events: none;
   }
   
-  .menu__unit:hover .menu__unit--bg,
-  .sub-menu:hover + .menu__unit--bg {
+  .menu__unit:hover .menu__unit--bg {
     visibility: visible;
     transition-delay: 0s;
   }
   
-  .menu__unit:hover .menu__unit--bg:before,
-  .sub-menu:hover + .menu__unit--bg:before {
+  .menu__unit:hover .menu__unit--bg:before {
     opacity: .15;
   }
 }
