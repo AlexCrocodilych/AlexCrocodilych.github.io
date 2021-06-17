@@ -844,6 +844,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .dropdown-menu__icon {
@@ -1463,6 +1464,7 @@ html {
   .dropdown-menu__button,
   .dropdown-menu__caption {
     height: 100%;
+    box-sizing: border-box;
   }
 
   .menu__item:last-of-type {
