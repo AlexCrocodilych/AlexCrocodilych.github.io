@@ -848,7 +848,7 @@ html {
 .dropdown-menu__icon {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-  margin-left: calc(8 var(--unit));
+/*  margin-left: calc(8 var(--unit));*/
   display: block;
   flex-shrink: 0;
   fill: var(--color-01-normal);
@@ -890,7 +890,7 @@ html {
   top: calc(80 var(--unit));
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   visibility: hidden;
   transition-property: visibility;
   transition-duration: 0;
@@ -900,11 +900,11 @@ html {
 
 .menu__unit--bg:before {
   content: '';
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: calc(80 var(--unit));
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
   background: var(--color-02-normal);
   opacity: 0;
   transition-property: opacity;
@@ -1920,12 +1920,12 @@ html {
     display: flex;
   }
 
-  .toggle-menu[open] + .menu__list .menu__unit--bg {
+  .toggle-menu[open] + .menu__list .menu__item .menu__unit .menu__unit--bg {
     visibility: visible;
     transition-delay: 0s;
   }
   
-  .toggle-menu[open] + .menu__list .menu__unit--bg:before {
+  .toggle-menu[open] + .menu__list .menu__item .menu__unit .menu__unit--bg:before {
     opacity: .15;
   }
   
