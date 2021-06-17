@@ -236,8 +236,6 @@ textarea:focus,
 textarea:active,
 a:focus,
 a:active,
-details:focus,
-details:active,
 summary:focus,
 summary:active {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -847,21 +845,13 @@ html {
   box-sizing: border-box;
 }
 
-.dropdown-menu__pic {
-  width: calc(8 var(--unit));
-  height: calc(8 var(--unit));
-  display: flex;
-  margin-left: calc(8 var(--unit));
-}
-
 .dropdown-menu__icon {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-  
+  margin-left: calc(8 var(--unit));
   display: block;
   flex-shrink: 0;
   fill: var(--color-01-normal);
-/*  transform: scale(1);*/
   transition-property: fill, transform;
   transition-duration: .2s;
   transition-timing-function: linear;
@@ -1648,7 +1638,7 @@ html {
     height: calc(30 var(--unit));
     fill: var(--color-02-normal);
   }
-
+  
   .toggle-menu__button {
     position: relative;
     display: flex;
@@ -1687,6 +1677,21 @@ html {
   .toggle-menu[open] .toggle-menu__icon--close {
     z-index: 2;
     opacity: 1;
+  }
+  
+  .toggle-menu__button:focus:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .toggle-menu__button:focus:not(:focus-visible):before {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .toggle-menu__button:focus-visible:before {
+    opacity: 1;
+    visibility: visible;
   }
 
   .menu__list {
