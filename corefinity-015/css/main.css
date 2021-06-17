@@ -845,10 +845,13 @@ html {
   box-sizing: border-box;
 }
 
+.dropdown-menu__inner .menu__headline {
+  padding-right: calc(8 var(--unit));
+}
+
 .dropdown-menu__icon {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-/*  margin-left: calc(8 var(--unit));*/
   display: block;
   flex-shrink: 0;
   fill: var(--color-01-normal);
@@ -886,7 +889,7 @@ html {
 
 .menu__unit--bg {
   position: fixed;
-  z-index: -1;
+/*  z-index: -1;*/
   top: calc(80 var(--unit));
   bottom: 0;
   left: 0;
@@ -1803,6 +1806,8 @@ html {
 
   .sub-menu,
   .sub-sub-menu {
+    position: relative;
+    z-index: 2;
     height: 0;
     margin: 0;
     background: var(--color-02-light-ultra);
