@@ -851,10 +851,10 @@ html {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
   margin-left: calc(8 var(--unit));
-  display: flex;
+  display: block;
   flex-shrink: 0;
   fill: var(--color-01-normal);
-  transform: scale(1);
+/*  transform: scale(1);*/
   transition-property: fill, transform;
   transition-duration: .2s;
   transition-timing-function: linear;
@@ -1904,12 +1904,14 @@ html {
     display: flex;
   }
 
-  .toggle-menu[open] + .menu__list .menu__unit--bg {
+  .toggle-menu[open] + .menu__list .menu__unit--bg,
+  .dropdown-menu[open] + .sub-menu + .menu__unit--bg {
     visibility: visible;
     transition-delay: 0s;
   }
   
-  .toggle-menu[open] + .menu__list .menu__unit--bg:before {
+  .toggle-menu[open] + .menu__list .menu__unit--bg:before,
+  .dropdown-menu[open] + .sub-menu + .menu__unit--bg:before {
     opacity: .15;
   }
   
