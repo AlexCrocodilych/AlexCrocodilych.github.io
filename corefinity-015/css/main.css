@@ -847,10 +847,17 @@ html {
   box-sizing: border-box;
 }
 
+.dropdown-menu__pic {
+  width: calc(8 var(--unit));
+  height: calc(8 var(--unit));
+  display: flex;
+  margin-left: calc(8 var(--unit));
+}
+
 .dropdown-menu__icon {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-  margin-left: calc(8 var(--unit));
+  
   display: block;
   flex-shrink: 0;
   fill: var(--color-01-normal);
