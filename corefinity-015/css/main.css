@@ -1591,28 +1591,27 @@ address {
   }
 
   .toggle-menu {
-    width: calc(30 var(--unit));
-    height: calc(30 var(--unit));
     display: flex;
     fill: var(--color-02-normal);
     cursor: pointer;
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
   }
 
   .toggle-menu__button {
     display: flex;
-    position: relative;
-    width: calc(30 var(--unit));
-    height: calc(30 var(--unit));
+/*    position: relative;*/
     fill: var(--color-02-normal);
   }
 
   .toggle-menu__icon {
     display: block;
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
     transition: opacity .2s linear;
   }
 
