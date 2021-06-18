@@ -292,8 +292,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary,
-summary *{
+summary {
   box-sizing: border-box;
   display: block;
 }
@@ -1592,12 +1591,14 @@ address {
   }
 
   .toggle-menu {
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
     display: flex;
     fill: var(--color-02-normal);
-    box-sizing: border-box;
   }
 
   .toggle-menu__button {
+    display: flex;
     position: relative;
     width: calc(30 var(--unit));
     height: calc(30 var(--unit));
@@ -1606,6 +1607,7 @@ address {
   }
 
   .toggle-menu__icon {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
