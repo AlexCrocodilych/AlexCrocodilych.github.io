@@ -1600,7 +1600,9 @@ address {
 
   .toggle-menu__button {
     display: flex;
-/*    position: relative;*/
+    position: relative;
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
     fill: var(--color-02-normal);
   }
 
