@@ -64,7 +64,7 @@
   --color-02-light-lighter: hsla(var(--base-color-02), 88%, 94%, 1);
   --color-02-light-lightest: hsla(var(--base-color-02), 88%, 98%, 1);
   --max-basis: 1;
-  --min-basis: .7;
+  --min-basis: .6;
   --ratio: * ((var(--max-basis) * 1px - (var(--width-container) * 1px - 100vw) * ((var(--max-basis) - var(--min-basis)) / (var(--width-container) - var(--width-container-min)))) / var(--max-basis));
   --unit: * clamp(var(--min-basis) * 1px, 1 var(--ratio), var(--max-basis) * 1px);
   --gap: * 30 var(--unit);
