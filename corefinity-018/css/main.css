@@ -788,16 +788,10 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*  box-sizing: border-box;*/
-}
-
-.dropdown-sub-menu__caption {
-/*  box-sizing: border-box;*/
 }
 
 .dropdown-menu__inner .menu__headline {
   padding-right: calc(8 var(--unit));
-/*  box-sizing: border-box;*/
 }
 
 .menu__icon {
@@ -1599,8 +1593,6 @@ address {
 
   .toggle-menu {
     display: flex;
-    width: calc(30 var(--unit));
-    height: calc(30 var(--unit));
     fill: var(--color-02-normal);
   }
 
@@ -1618,9 +1610,10 @@ address {
 
   .toggle-menu__icon {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     transition: opacity .2s linear;
   }
 
