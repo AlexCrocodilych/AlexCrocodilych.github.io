@@ -423,9 +423,20 @@ address {
   filter: drop-shadow(calc(6 var(--unit)) calc(6 var(--unit)) calc(12 var(--unit)) hsla(var(--base-color-01), 100%, 44%, .15));
 }
 
+.body--bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, var(--color-02-light-lighter), var(--color-02-light-lighter) 50%, var(--color-01-normal) 50%, var(--color-01-normal));
+}
+
 .section {
   position: relative;
   padding: calc(3 var(--gap)) 0;
+  background: #fff;
 }
 
 .section--blue {
