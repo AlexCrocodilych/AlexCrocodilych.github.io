@@ -1594,10 +1594,8 @@ address {
     width: calc(30 var(--unit));
     height: calc(30 var(--unit));
     display: flex;
-    flex-shrink: 0;
     fill: var(--color-02-normal);
     cursor: pointer;
-    transform: translate3d(0,0,0);
   }
 
   .toggle-menu__button {
