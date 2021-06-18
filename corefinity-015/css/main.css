@@ -1594,6 +1594,8 @@ address {
     display: flex;
     fill: var(--color-02-normal);
     cursor: pointer;
+    width: calc(30 var(--unit));
+    height: calc(30 var(--unit));
   }
 
   .toggle-menu__button {
