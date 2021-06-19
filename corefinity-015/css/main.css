@@ -817,6 +817,7 @@ address {
   height: calc(8 var(--unit));
   display: flex;
   flex-shrink: 0;
+  transform: translate3d(0,0,0);
 }
 
 .dropdown-menu__icon {
