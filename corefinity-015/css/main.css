@@ -813,6 +813,8 @@ address {
 }
 
 .menu__icon {
+  width: calc(8 var(--unit));
+  height: calc(8 var(--unit));
   display: flex;
   flex-shrink: 0;
 }
