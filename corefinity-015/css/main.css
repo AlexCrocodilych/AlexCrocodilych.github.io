@@ -808,10 +808,13 @@ address {
   align-items: center;
 }
 
+.dropdown-menu__inner .menu__headline {
+  margin-right: calc(8 var(--unit));
+}
+
 .menu__icon {
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-  margin-left: calc(8 var(--unit));
   display: flex;
   flex-shrink: 0;
 }
@@ -1629,7 +1632,6 @@ address {
     height: 100%;
     margin: auto;
     transition: opacity .2s linear;
-/*    transform: translate3d(0, 0, 0);*/
   }
 
   .toggle-menu .toggle-menu__icon--open {
