@@ -152,7 +152,7 @@ img {
 }
 
 svg {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 button,
@@ -1629,7 +1629,7 @@ address {
     height: 100%;
     margin: auto;
     transition: opacity .2s linear;
-    transform: translate3d(0, 0, 0);
+/*    transform: translate3d(0, 0, 0);*/
   }
 
   .toggle-menu .toggle-menu__icon--open {
@@ -1725,7 +1725,7 @@ address {
   .menu__link:before {
     display: none;
   }
-  
+
   .dropdown-menu {
     position: relative;
     z-index: 2;
@@ -1809,7 +1809,7 @@ address {
     padding: 0;
     flex-direction: column;
   }
-  
+
   .dropdown-sub-menu {
     position: relative;
     z-index: 2;
@@ -2060,7 +2060,7 @@ address {
 
   .menu__unit:hover .dropdown-menu__icon {
     fill: var(--color-02-normal);
-    transform: scaleY(-1);;
+    transform: scaleY(-1);
   }
 
   .dropdown-menu {
