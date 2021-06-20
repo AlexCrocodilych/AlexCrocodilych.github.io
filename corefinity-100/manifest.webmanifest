@@ -11,5 +11,11 @@
   "icons": [{
         "src": "google-touch-icon.png",
         "sizes": "512x512"
+    },
+    {
+      "src": "images/icon-maskable-196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
     }]
 }
