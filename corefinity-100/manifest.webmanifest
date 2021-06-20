@@ -1,0 +1,34 @@
+{
+  "name": "corefinity.com",
+  "short_name": "CoreFinity",
+  "description": "Highly optimised eCommerce Hosting",
+  "lang": "en",
+  "display": "standalone",
+  "start_url": "https://alexcrocodilych.github.io/corefinity-100/",
+  "scope": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#95a5a6",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "type": "image/png",
+      "sizes": "16x16 32x32 64x64 128x128 192x192"
+    },
+    {
+      "src": "images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/icon-maskable-196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+    ]
+}
