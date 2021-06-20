@@ -1,0 +1,232 @@
+/*   Magento2 Page   */
+
+.page-top {
+    display: flex;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.page-top__container {
+    min-height: calc(100vh - 10rem);
+    padding: 10rem 3rem;
+}
+
+.page-top__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page-top__bg_item {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+}
+
+.page-top__bg_item:nth-of-type(1) {
+    top: 0;
+    left: -7rem;
+    background: #f3f3f3;
+}
+
+.page-top__bg_item:nth-of-type(2) {
+    top: 20rem;
+    left: -27rem;
+    background: #efefef;
+}
+
+.page-top__bg_item:nth-of-type(3) {
+    top: 60rem;
+    left: -7rem;
+    background: #ebebeb;
+}
+
+.page-top__bg_item:nth-of-type(4) {
+    top: 20rem;
+    right: -7rem;
+    background: #ebebeb;
+}
+
+.page-top__bg_item:nth-of-type(5) {
+    top: 40rem;
+    right: -27rem;
+    background: #ffffff;
+}
+
+.page-top__bg_item:nth-of-type(6) {
+    right: -7em;
+    top: 80rem;
+    background: #fbfbfb;
+}
+
+.magento-2-top__content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.magento-2__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.table-wrap {
+    width: 100%;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+}
+
+.magento-2__table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.magento-2__table_item {
+    height: 4.5rem;
+    padding: 0 2rem;
+    font: 400 1.5rem / .8 'Nunito Sans', sans-serif;
+    white-space: nowrap;
+    transition: all .3s ease-out;
+}
+
+th.magento-2__table_item {
+    background: #101010;
+    color: #fff;
+}
+
+td.magento-2__table_item {
+    background: #f7f7f7;
+    color: #101010;
+}
+
+.magento-2__table_row:nth-of-type(2n) .magento-2__table_item {
+    background: #fff;
+}
+
+.magento-2__table_row:hover td.magento-2__table_item {
+    background: #ffeeee;
+}
+
+td.magento-2__table_item:nth-of-type(n):hover {
+    background: #ffd7d7;
+}
+
+.magento-2__table_item:not(:last-of-type) {
+    border-right: .3rem solid #ececec;
+}
+
+.magento-2__table_row:not(:last-of-type) .magento-2__table_item {
+    border-bottom: .3rem solid #ececec;
+}
+
+.magento-2__table_item .link-01 {
+    font: 400 1.5rem / .8 'Nunito Sans', sans-serif;
+    color: #101010;
+}
+
+.magento-2__table_item:last-of-type .link-01 {
+    color: #f70001;
+}
+
+.magento-2__table_item .link-01:after {
+    background: #101010;
+}
+
+.magento-2__table_item:last-of-type .link-01:after {
+    background: #f70001;
+}
+
+.magento-2__result {
+    margin-top: 5rem;
+}
+
+.magento-2__result_h4 {
+    font: 700 1.8rem / .8 'Nunito Sans', sans-serif;
+}
+
+.magento-2-main .p-text {
+    text-align: justify;
+}
+
+/*   Responsive   */
+
+@media screen and (max-width : 1440px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .table-wrap {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    
+    html {
+        font-size: 10px;
+    }
+    
+    .mobile-none {
+        display: none !important;
+    }
+    
+    .mobile-width-100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width : 832px) {
+    
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 668px) {
+   
+    html {
+        font-size: 7.5px;
+    }
+}
+
+@media screen and (max-width : 420px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 380px) {
+   
+    html {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width : 360px) {
+   
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+   
+    html {
+        font-size: 4.75px;
+    }
+}
