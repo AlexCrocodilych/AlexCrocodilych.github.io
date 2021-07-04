@@ -813,18 +813,18 @@ address {
 .menu__icon {
   display: flex;
   flex-shrink: 0;
-  width: calc(8 var(--unit));
-  height: calc(8 var(--unit));
+  width: calc(7 var(--unit));
+  height: calc(7 var(--unit));
 }
 
-.dropdown-menu__inner .menu__icon {
-  margin-left: calc(8 var(--unit));
+.dropdown-menu__inner .menu__headline {
+  margin-right: calc(8 var(--unit));
 }
 
 .dropdown-menu__icon {
   display: flex;
-  width: calc(8 var(--unit));
-  height: calc(8 var(--unit));
+  width: 100%;
+  height: 100%;
   transform: scaleY(1);
   fill: var(--color-01-normal);
   transition-property: fill, transform;
@@ -1806,8 +1806,8 @@ address {
   }
 
   .menu__icon {
-    width: calc(12 var(--unit));
-    height: calc(12 var(--unit));
+    width: calc(10 var(--unit));
+    height: calc(10 var(--unit));
   }
 
   .dropdown-menu__icon,
