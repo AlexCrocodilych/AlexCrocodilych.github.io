@@ -810,10 +810,6 @@ address {
   align-items: center;
 }
 
-.dropdown-menu__inner .menu__headline {
-  padding-right: calc(8 var(--unit));
-}
-
 .menu__icon {
   display: flex;
   flex-shrink: 0;
@@ -821,10 +817,15 @@ address {
   height: calc(8 var(--unit));
 }
 
+.dropdown-menu__inner .menu__icon {
+  margin-left: calc(8 var(--unit));
+}
+
 .dropdown-menu__icon {
   display: flex;
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
+  transform: scaleY(1);
   fill: var(--color-01-normal);
   transition-property: fill, transform;
   transition-duration: 0.2s;
