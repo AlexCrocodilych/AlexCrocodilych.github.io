@@ -1,0 +1,21 @@
+{
+  "name": "corefinity.com",
+  "short_name": "CoreFinity",
+  "description": "Highly optimised eCommerce Hosting",
+  "lang": "en",
+  "display": "standalone",
+  "start_url": "https://alexcrocodilych.github.io/corefinity-1000/",
+  "scope": "/",
+  "background_color": "#fff",
+  "theme_color": "#009de0",
+  "icons": [{
+        "src": "google-touch-icon.png",
+        "sizes": "512x512"
+    },
+    {
+      "src": "images/icon-maskable-196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+}
