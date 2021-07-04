@@ -808,7 +808,6 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translate3d(0, 0, 0);
 }
 
 .dropdown-menu__inner .menu__headline {
@@ -820,7 +819,6 @@ address {
   flex-shrink: 0;
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
-  transform: translate3d(0, 0, 0);
 }
 
 .dropdown-menu__icon {
@@ -1235,7 +1233,7 @@ address {
 }
 
 .main .section:last-child {
-  padding-bottom: calc(130 var(--unit));
+  padding-bottom: calc(140 var(--unit));
 }
 
 .footer {
@@ -1391,7 +1389,7 @@ address {
 @media (min-width: 1001px) {
   .menu__list {
     height: 100%;
-    margin: 0 calc(30 var(--unit));
+    margin: 0 calc(20 var(--unit));
   }
 
   .menu__item,
