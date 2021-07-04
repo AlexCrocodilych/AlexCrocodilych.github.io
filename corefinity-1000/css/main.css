@@ -820,6 +820,7 @@ address {
   flex-shrink: 0;
   width: calc(8 var(--unit));
   height: calc(8 var(--unit));
+  transform: translate3d(0, 0, 0);
 }
 
 .dropdown-menu__icon {
