@@ -751,6 +751,7 @@ address {
 }
 
 .logo {
+  z-index: 3;
   display: flex;
   height: calc(40 var(--unit));
   font-weight: 600;
@@ -875,6 +876,10 @@ address {
   background: var(--color-02-normal);
   opacity: 0;
   transition: opacity 0.2s linear;
+}
+
+.header__button {
+  z-index: 3;
 }
 
 .main {
@@ -1570,7 +1575,23 @@ address {
     cursor: pointer;
   }
 
+  .toggle-menu__button:after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+
+  .toggle-menu[open] .toggle-menu__button:after {
+    width: 100%;
+  }
+
   .toggle-menu__button {
+    z-index: 2;
     display: flex;
     width: calc(30 var(--unit));
     height: calc(30 var(--unit));
@@ -1605,26 +1626,24 @@ address {
     opacity: 1;
   }
 
-  .toggle-menu[open] .toggle-menu__button:focus:before,
-  .toggle-menu:not([open]) .toggle-menu__button:focus:before {
+  .toggle-menu__button:focus:before {
     visibility: visible;
     opacity: 1;
   }
 
-  .toggle-menu[open] .toggle-menu__button:focus:not(:focus-visible):before,
-  .toggle-menu:not([open]) .toggle-menu__button:focus:not(:focus-visible):before {
+  .toggle-menu__button:focus:not(:focus-visible):before {
     visibility: hidden;
     opacity: 0;
   }
 
-  .toggle-menu[open] .toggle-menu__button:focus-visible:before,
-  .toggle-menu:not([open]) .toggle-menu__button:focus-visible:before {
+  .toggle-menu__button:focus-visible:before {
     visibility: visible;
     opacity: 1;
   }
 
   .menu__list {
     position: fixed;
+    z-index: 3;
     top: calc(80 var(--unit));
     bottom: 0;
     left: -100%;

@@ -1,0 +1,6 @@
+{ 
+  "highlight": true,
+  "injectBody": true,
+  "remoteLogs": "yellow",
+  "injectCss": true
+}
