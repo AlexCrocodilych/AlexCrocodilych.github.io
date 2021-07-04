@@ -1459,6 +1459,20 @@ address {
     opacity: 1;
   }
 
+  .dropdown-menu__button:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+
+  .dropdown-menu[open] .dropdown-menu__button:after {
+    width: 100%;
+  }
+
   .dropdown-menu[open] .dropdown-menu__caption {
     background: var(--color-02-light-lightest);
   }
