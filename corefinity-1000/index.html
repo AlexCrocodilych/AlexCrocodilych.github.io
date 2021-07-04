@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#009de0">
   <link rel="icon" href="images/favicon.svg">
+  <link rel="alternate icon" href="images/apple-touch-icon.png">
   <link rel="mask-icon" href="mask-icon.svg" color="#fff">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -73,9 +74,9 @@
                   </span>
                 </summary>
               </details>
-              <div class="menu__sub-menu sub-menu" aria-label="Header Sub-menu">
+              <div class="menu__sub-menu sub-menu">
                 <div class="sub-menu__wrapper">
-                  <ul class="sub-menu__list container">
+                  <ul class="sub-menu__list container" aria-label="Header Sub-menu">
                     <li class="sub-menu__item">
                       <details class="sub-menu__dropdown dropdown-sub-menu">
                         <summary class="dropdown-sub-menu__button" aria-label="Toggle Sub-sub-menu">
@@ -391,7 +392,7 @@
               </li>
             </ul>
           </div>
-          <h2 class="visually--hidden">Our indicators</h2>
+          <h3 class="visually--hidden">Our indicators</h3>
           <ul class="about__numbers numbers-about">
             <li class="numbers-about__item item">
               <span class="item--border item--bottom"></span>
@@ -526,9 +527,9 @@
         </div>
       </div>
     </section>
-    <section class="footer__content">
+    <section class="footer__content" aria-label="Footer Menu">
       <div class="container container--column">
-        <div class="footer__links links-footer" aria-label="Footer Menu">
+        <div class="footer__links links-footer">
           <div class="links-footer__column">
             <h3 class="links-footer__title">Quick links</h3>
             <ul class="links-footer__list">

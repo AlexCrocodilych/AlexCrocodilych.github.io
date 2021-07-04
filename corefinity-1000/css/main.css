@@ -216,10 +216,9 @@ input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
   border-radius: 0;
-          appearance: none;
-
   -webkit-appearance: none;
      -moz-appearance: none;
+          appearance: none;
 }
 
 select::-ms-expand {
@@ -245,7 +244,6 @@ a:active,
 summary:focus,
 summary:active {
   outline: none;
-
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
@@ -283,7 +281,6 @@ figure {
 
 [type="search"] {
   outline-offset: -2px;
-
   -webkit-appearance: textfield;
 }
 
@@ -293,7 +290,6 @@ figure {
 
 ::-webkit-file-upload-button {
   font: inherit;
-
   -webkit-appearance: button;
 }
 
@@ -1610,17 +1606,20 @@ address {
     opacity: 1;
   }
 
-  .toggle-menu__button:focus:before {
+  .toggle-menu[open] .toggle-menu__button:focus:before,
+  .toggle-menu:not([open]) .toggle-menu__button:focus:before {
     visibility: visible;
     opacity: 1;
   }
 
-  .toggle-menu__button:focus:not(:focus-visible):before {
+  .toggle-menu[open] .toggle-menu__button:focus:not(:focus-visible):before,
+  .toggle-menu:not([open]) .toggle-menu__button:focus:not(:focus-visible):before {
     visibility: hidden;
     opacity: 0;
   }
 
-  .toggle-menu__button:focus-visible:before {
+  .toggle-menu[open] .toggle-menu__button:focus-visible:before,
+  .toggle-menu:not([open]) .toggle-menu__button:focus-visible:before {
     visibility: visible;
     opacity: 1;
   }
