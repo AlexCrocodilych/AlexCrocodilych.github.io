@@ -820,28 +820,23 @@ address {
   align-items: center;
 }
 
-.dropdown-menu__inner .menu__headline {
-  padding-right: calc(9 var(--unit));
-}
-
 .menu__icon {
   display: flex;
   flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
-  transform-origin: 50% 50%;
-  fill: var(--color-01-normal);
-  transition-property: fill, transform;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  margin-left: calc(8 var(--unit));
 }
 
 .dropdown-menu__icon {
   display: block;
   width: 100%;
-  height: 100%;
+  transform: rotate(0);
+  transform-origin: 50% 50%;
+  fill: var(--color-01-normal);
+  transition-property: fill, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .sub-sub-menu {
@@ -1493,7 +1488,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .dropdown-menu[open] .menu__icon {
+  .dropdown-menu[open] .dropdown-menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
@@ -1674,7 +1669,7 @@ address {
     bottom: 0;
     left: -100%;
     flex-direction: column;
-    width: 50%;
+    width: min(calc(600 var(--unit)), 100%);
     background: #fff;
     overflow-y: auto;
     visibility: hidden;
@@ -1818,25 +1813,27 @@ address {
   }
 
   .menu__icon {
-    z-index: 2;
     width: calc(12 var(--unit));
     height: calc(12 var(--unit));
-    fill: var(--color-01-normal);
-    transition-property: fill, transform;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
   }
 
   .dropdown-menu__icon,
   .dropdown-sub-menu__icon {
     display: block;
     width: 100%;
-    height: 100%;
+    fill: var(--color-01-normal);
+    transition-property: fill, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
   }
 
-  .dropdown-menu[open] .menu__icon,
-  .dropdown-sub-menu[open] .menu__icon {
+  .dropdown-menu[open] .dropdown-menu__icon {
     transform: rotate(-180deg);
+    fill: var(--color-02-normal);
+  }
+
+  .dropdown-sub-menu[open] .dropdown-sub-menu__icon {
+    transform: rotate(180deg);
     fill: var(--color-02-normal);
   }
 
@@ -1979,12 +1976,6 @@ address {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .menu__list {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .title-section {
     font-size: calc(40 var(--unit));
@@ -2053,7 +2044,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .menu__unit:hover .menu__icon {
+  .menu__unit:hover .dropdown-menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
