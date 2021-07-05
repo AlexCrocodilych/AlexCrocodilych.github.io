@@ -810,7 +810,7 @@ address {
   align-items: center;
   font-weight: 600;
   font-size: calc(12 var(--unit));
-  line-height: 1.4;
+  line-height: 0.75;
 }
 
 .dropdown-menu__inner {
@@ -818,7 +818,7 @@ address {
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .menu__icon {
@@ -826,7 +826,7 @@ address {
   flex-shrink: 0;
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
-  margin: 0 0 calc(2 var(--unit)) calc(8 var(--unit));
+  margin-left: calc(8 var(--unit));
   transform-origin: 50% 50%;
   fill: var(--color-01-normal);
   transition-property: fill, transform;
