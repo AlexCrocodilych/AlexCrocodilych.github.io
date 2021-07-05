@@ -808,9 +808,10 @@ address {
   z-index: 2;
   display: flex;
   align-items: center;
+  margin: -0.3em 0 -0.35em;
   font-weight: 600;
   font-size: calc(12 var(--unit));
-  line-height: 0.75;
+  line-height: 1.4;
 }
 
 .dropdown-menu__inner {
@@ -827,7 +828,6 @@ address {
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
   margin-left: calc(8 var(--unit));
-  transform-origin: 50% 50%;
   fill: var(--color-01-normal);
   transition-property: fill, transform;
   transition-duration: 0.2s;
