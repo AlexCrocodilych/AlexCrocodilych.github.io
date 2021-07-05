@@ -517,7 +517,6 @@ address {
   transition: opacity 0.2s linear;
 }
 
-.button__text,
 .button__text {
   content: "";
   position: relative;
@@ -545,8 +544,19 @@ address {
   color: var(--color-02-normal);
 }
 
-.button--light:focus-visible .button__text,
-.button--light:focus.button:hover .button__text {
+.button--light:focus .button__text {
+  box-shadow: 0 calc(6 var(--unit)) calc(12 var(--unit)) hsla(var(--base-color-02), 100%, 44%, 0.25);
+  background: var(--color-02-normal);
+  color: #fff;
+}
+
+.button--light:focus:not(:focus-visible) .button__text {
+  box-shadow: 0 calc(6 var(--unit)) calc(12 var(--unit)) hsla(var(--base-color-01), 100%, 45%, 0.5);
+  background: #fff;
+  color: var(--color-02-normal);
+}
+
+.button--light:focus-visible .button__text {
   box-shadow: 0 calc(6 var(--unit)) calc(12 var(--unit)) hsla(var(--base-color-02), 100%, 44%, 0.25);
   background: var(--color-02-normal);
   color: #fff;
@@ -808,13 +818,12 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: calc(9 var(--unit));
 }
 
 .menu__icon {
   display: flex;
   flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
   margin-left: calc(9 var(--unit));
@@ -1481,7 +1490,7 @@ address {
   }
 
   .dropdown-menu[open] .menu__icon {
-    transform: scaleY(-1);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
@@ -1823,7 +1832,7 @@ address {
 
   .dropdown-menu[open] .menu__icon,
   .dropdown-sub-menu[open] .menu__icon {
-    transform: scale(-1);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
@@ -1992,6 +2001,7 @@ address {
   .button--light:hover .button__text {
     box-shadow: 0 calc(8 var(--unit)) calc(16 var(--unit)) hsla(var(--base-color-01), 100%, 75%, 0.5);
     background: #fff;
+    color: var(--color-02-normal);
   }
 
   .link:hover {
@@ -2040,7 +2050,7 @@ address {
   }
 
   .menu__unit:hover .menu__icon {
-    transform: scale(-1);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
