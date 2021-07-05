@@ -820,22 +820,28 @@ address {
   align-items: center;
 }
 
+.dropdown-menu__inner .menu__headline {
+  padding-right: calc(9 var(--unit));
+}
+
 .menu__icon {
   display: flex;
   flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
-  margin-left: calc(9 var(--unit));
+  transform-origin: 50% 50%;
+  fill: var(--color-01-normal);
+  transition-property: fill, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .dropdown-menu__icon {
   display: block;
   width: 100%;
   height: 100%;
-  fill: var(--color-01-normal);
-  transition-property: fill, transform;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
 }
 
 .sub-sub-menu {
@@ -1487,7 +1493,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .dropdown-menu[open] .dropdown-menu__icon {
+  .dropdown-menu[open] .menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
@@ -1828,8 +1834,8 @@ address {
     height: 100%;
   }
 
-  .dropdown-menu[open] .dropdown-menu__icon,
-  .dropdown-sub-menu[open] .dropdown-menu__icon {
+  .dropdown-menu[open] .menu__icon,
+  .dropdown-sub-menu[open] .menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
@@ -2047,7 +2053,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .menu__unit:hover .dropdown-menu__icon {
+  .menu__unit:hover .menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
