@@ -820,6 +820,7 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  background-color: aquamarine;
 }
 
 .menu__icon {
