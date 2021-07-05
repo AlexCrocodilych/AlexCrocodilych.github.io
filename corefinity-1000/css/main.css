@@ -826,17 +826,16 @@ address {
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
   margin-left: calc(8 var(--unit));
-}
-
-.dropdown-menu__icon {
-  display: block;
-  width: 100%;
-  transform: rotate(0);
   transform-origin: 50% 50%;
   fill: var(--color-01-normal);
   transition-property: fill, transform;
   transition-duration: 0.2s;
   transition-timing-function: linear;
+}
+
+.dropdown-menu__icon {
+  display: block;
+  width: 100%;
 }
 
 .sub-sub-menu {
@@ -1488,7 +1487,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .dropdown-menu[open] .dropdown-menu__icon {
+  .dropdown-menu[open] .menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
@@ -1813,27 +1812,25 @@ address {
   }
 
   .menu__icon {
+    z-index: 2;
     width: calc(12 var(--unit));
     height: calc(12 var(--unit));
-  }
-
-  .dropdown-menu__icon,
-  .dropdown-sub-menu__icon {
-    display: block;
-    width: 100%;
     fill: var(--color-01-normal);
     transition-property: fill, transform;
     transition-duration: 0.2s;
     transition-timing-function: linear;
   }
 
-  .dropdown-menu[open] .dropdown-menu__icon {
-    transform: rotate(-180deg);
-    fill: var(--color-02-normal);
+  .dropdown-menu__icon,
+  .dropdown-sub-menu__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  .dropdown-sub-menu[open] .dropdown-sub-menu__icon {
-    transform: rotate(180deg);
+  .dropdown-menu[open] .menu__icon,
+  .dropdown-sub-menu[open] .menu__icon {
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
@@ -2044,7 +2041,7 @@ address {
     color: var(--color-02-normal);
   }
 
-  .menu__unit:hover .dropdown-menu__icon {
+  .menu__unit:hover .menu__icon {
     transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
