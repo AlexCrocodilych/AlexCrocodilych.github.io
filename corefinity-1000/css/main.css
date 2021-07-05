@@ -808,10 +808,9 @@ address {
   z-index: 2;
   display: flex;
   align-items: center;
-  margin: -0.3em 0 -0.35em;
   font-weight: 600;
   font-size: calc(12 var(--unit));
-  line-height: 1.4;
+  line-height: 0.75;
 }
 
 .dropdown-menu__inner {
@@ -820,7 +819,6 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  background-color: aquamarine;
 }
 
 .menu__icon {
@@ -838,6 +836,7 @@ address {
 .dropdown-menu__icon {
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 .sub-sub-menu {
@@ -1490,7 +1489,7 @@ address {
   }
 
   .dropdown-menu[open] .menu__icon {
-    transform: rotate(-180deg) translate3d(0, 0, 0);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
@@ -1832,7 +1831,7 @@ address {
 
   .dropdown-menu[open] .menu__icon,
   .dropdown-sub-menu[open] .menu__icon {
-    transform: rotate(-180deg) translate3d(0, 0, 0);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
@@ -2044,7 +2043,7 @@ address {
   }
 
   .menu__unit:hover .menu__icon {
-    transform: rotate(-180deg) translate3d(0, 0, 0);
+    transform: rotate(-180deg);
     fill: var(--color-02-normal);
   }
 
