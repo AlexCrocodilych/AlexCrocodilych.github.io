@@ -816,6 +816,7 @@ address {
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
   margin-left: calc(9 var(--unit));
+  transform-origin: 50% 50%;
   fill: var(--color-01-normal);
   transition-property: fill, transform;
   transition-duration: 0.2s;
