@@ -801,8 +801,6 @@ address {
 .menu__link,
 .menu__headline {
   position: relative;
-  font-weight: 600;
-  font-size: calc(12 var(--unit));
   text-transform: uppercase;
 }
 
@@ -810,6 +808,9 @@ address {
   z-index: 2;
   display: flex;
   align-items: center;
+  font-weight: 600;
+  font-size: calc(12 var(--unit));
+  line-height: 1.4;
 }
 
 .dropdown-menu__inner {
@@ -825,7 +826,7 @@ address {
   flex-shrink: 0;
   width: calc(9 var(--unit));
   height: calc(9 var(--unit));
-  margin-left: calc(8 var(--unit));
+  margin: 0 0 calc(2 var(--unit)) calc(8 var(--unit));
   transform-origin: 50% 50%;
   fill: var(--color-01-normal);
   transition-property: fill, transform;
