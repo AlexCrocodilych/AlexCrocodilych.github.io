@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "lib": ["esnext"],
+    "target": "es2019",
+    "module": "commonjs",
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "noEmitOnError": true,
+
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    "skipLibCheck": false,
+
+    "alwaysStrict": false,
+    "preserveConstEnums": false,
+
+    "types": ["node"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
+}
