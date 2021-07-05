@@ -1490,7 +1490,7 @@ address {
   }
 
   .dropdown-menu[open] .menu__icon {
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) translate3d(0, 0, 0);
     fill: var(--color-02-normal);
   }
 
@@ -1832,7 +1832,7 @@ address {
 
   .dropdown-menu[open] .menu__icon,
   .dropdown-sub-menu[open] .menu__icon {
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) translate3d(0, 0, 0);
     fill: var(--color-02-normal);
   }
 
@@ -2044,7 +2044,7 @@ address {
   }
 
   .menu__unit:hover .menu__icon {
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) translate3d(0, 0, 0);
     fill: var(--color-02-normal);
   }
 
